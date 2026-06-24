@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Image Resizer Pro</title>
+<link rel="stylesheet" href="image.css">
+</head>
+
+<body>
+
+<div class="app">
+
+  <h1>✨ Image Resizer Pro</h1>
+  <p class="subtitle">Resize • Rotate • Customize • Download 🚀</p>
+
+  <!-- Upload Area -->
+  <div class="upload-box" id="dropArea">
+    <p>Drag & Drop Images Here</p>
+    <span>or</span>
+    <input type="file" id="upload" multiple>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <input type="number" id="width" placeholder="Width">
+    <input type="number" id="height" placeholder="Height">
+    <input type="number" id="padding" placeholder="Padding %">
+    <input type="number" id="margin" placeholder="Margin %">
+    <input type="number" id="rotate" placeholder="Rotate °">
+    <input type="color" id="bgcolor">
+  </div>
+
+  <!-- Buttons -->
+  <div class="buttons">
+    <button onclick="processImages()">✨ Process</button>
+    <button onclick="downloadZip()">📦 Download ZIP</button>
+  </div>
+
+  <!-- Preview -->
+  <div id="preview"></div>
+
+</div>
+
+<script src="image.js"></script>
+
+</body>
+</html>
